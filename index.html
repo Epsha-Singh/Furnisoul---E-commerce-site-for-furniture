@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furnisoul | Premium Modern Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo" onclick="showSection('home')">Furni<span>soul</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" onclick="showSection('products')">Products</a></li>
+                    <li>
+                        <button class="cart-btn" onclick="showSection('cart')">
+                            Cart <span class="cart-count">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elevate Your Living Space</h1>
+                <p>Discover premium furniture that blends timeless design with modern functionality. Each piece is crafted with care to bring soul to your home.</p>
+                <button class="add-to-cart" onclick="showSection('products')">Shop Now &#10132;<button>
+            </div>
+        </div>
+        
+    </section>
+    <div class="features">
+            <div class="f1">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C6A664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="12 2 15 8.5 22 9.3 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.3 9 8.5 12 2" /></svg>
+                <h4>Premium Quality</h4>
+                <p>Handcrafted from the finest materials with attention to every detail.</p>
+            </div>
+            <div class="f1">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C6A664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L3 6V11C3 16.55 7.58 21.74 12 23C16.42 21.74 21 16.55 21 11V6L12 2Z" /></svg>
+
+                <h4>Lifetime Warranty</h4>
+                <p>We stand behind our craftsmanship with comprehensive protection.</p>
+            </div>
+            <div class="f1">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C6A664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="3" width="15" height="13" rx="2" ry="2" />
+                <path d="M16 8h4l3 3v5h-7z" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" /></svg>
+                <h4>White Glove Delivery</h4>
+                <p>Professional delivery and setup service included with every purchase.</p>
+            </div>
+        </div>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Collection</h2>
+                <p>Explore our complete range of luxury furniture pieces, each designed to transform your space.</p>
+            </div>
+            <div class="products-grid">
+                <!-- Dining Room Furniture -->
+                <div class="product-card">
+                    <div class="product-image" onclick="showProductDetails('dining1')">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/78d0b246-1b63-4b3d-94b5-c4725a14e7f4.png" alt="Minimalist Scandinavian oak dining table with clean lines and tapered legs" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scandinavian Dining Table</h3>
+                        <p class="product-price">$899</p>
+                        <button class="add-to-cart" onclick="addToCart(event, 'dining1', 'Scandinavian Dining Table', 899)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" onclick="showProductDetails('dining2')">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/42cb4bb1-2ace-451b-9ea7-1c728f0eb050.png" alt="Set of 4 contemporary dining chairs with velvet upholstery" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Velvet Dining Chairs (Set of 4)</h3>
+                        <p class="product-price">$1,299</p>
+                        <button class="add-to-cart" onclick="addToCart(event, 'dining2', 'Velvet Dining Chairs (Set of 4)', 1299)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Living Room Furniture -->
+                <div class="product-card">
+                    <div class="product-image" onclick="showProductDetails('living1')">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/28607472-4e51-47b6-a83c-346312194f5e.png" alt="Modern sectional sofa in charcoal gray fabric with contrasting legs" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Modular Sectional Sofa</h3>
+                        <p class="product-price">$2,499</p>
+                        <button class="add-to-cart" onclick="addToCart(event, 'living1', 'Modular Sectional Sofa', 2499)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" onclick="showProductDetails('living2')">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6342221c-8442-47ba-b6bc-0b6a33c30e3d.png" alt="Glass and metal coffee table with geometric design" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Geometric Coffee Table</h3>
+                        <p class="product-price">$749</p>
+                        <button class="add-to-cart" onclick="addToCart(event, 'living2', 'Geometric Coffee Table', 749)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Bedroom Furniture -->
+                <div class="product-card">
+                    <div class="product-image" onclick="showProductDetails('bedroom1')">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d7caf1e-fe8a-4056-acad-ea7c5e6cb5eb.png" alt="Low-profile platform bed in oak wood finish" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Oak Platform Bed</h3>
+                        <p class="product-price">$1,599</p>
+                        <button class="add-to-cart" onclick="addToCart(event, 'bedroom1', 'Oak Platform Bed', 1599)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" onclick="showProductDetails('bedroom2')">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0082d42c-9bbc-4d7f-8601-4dae06695685.png" alt="Modern 6-drawer dresser with brass hardware" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Modern Dresser</h3>
+                        <p class="product-price">$1,299</p>
+                        <button class="add-to-cart" onclick="addToCart(event, 'bedroom2', 'Modern Dresser', 1299)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Office Furniture -->
+                <div class="product-card">
+                    <div class="product-image" onclick="showProductDetails('office1')">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/64cbf383-998f-4d58-a6b4-82a7514c70f6.png" alt="Premium leather executive office chair" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Executive Office Chair</h3>
+                        <p class="product-price">$649</p>
+                        <button class="add-to-cart" onclick="addToCart(event, 'office1', 'Executive Office Chair', 649)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" onclick="showProductDetails('office2')">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e296932a-db5b-459f-9e0c-4e667175c9fc.png" alt="Adjustable height standing desk with wood finish" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Adjustable Standing Desk</h3>
+                        <p class="product-price">$899</p>
+                        <button class="add-to-cart" onclick="addToCart(event, 'office2', 'Adjustable Standing Desk', 899)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Outdoor Furniture -->
+                <div class="product-card">
+                    <div class="product-image" onclick="showProductDetails('outdoor1')">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1ae57568-7bad-4cd5-88da-b4f7e7fd68e4.png" alt="Modern outdoor patio set with weather-resistant cushions" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Patio Lounge Set</h3>
+                        <p class="product-price">$1,799</p>
+                        <button class="add-to-cart" onclick="addToCart(event, 'outdoor1', 'Patio Lounge Set', 1799)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Storage Solutions -->
+                <div class="product-card">
+                    <div class="product-image" onclick="showProductDetails('storage1')">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c62bc78d-ea65-44ef-825a-d7278c73c81c.png" alt="Modern open bookcase in walnut finish" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Walnut Bookcase</h3>
+                        <p class="product-price">$599</p>
+                        <button class="add-to-cart" onclick="addToCart(event, 'storage1', 'Walnut Bookcase', 599)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Accent Furniture -->
+                <div class="product-card">
+                    <div class="product-image" onclick="showProductDetails('accent1')">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1f890172-a602-4092-8f14-f94a241c3e17.png" alt="Slim entryway console table with marble top" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Marble Console Table</h3>
+                        <p class="product-price">$849</p>
+                        <button class="add-to-cart" onclick="addToCart(event, 'accent1', 'Marble Console Table', 849)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section (hidden by default) -->
+    <section id="product-details" class="product-details">
+        <div class="container details-container">
+            <div class="details-images">
+                <img class="main-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a47891ae-614b-4b07-b62c-5feee7de8cdb.png" alt="Main view of the product showing full perspective with room context" />
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/94fd0703-7351-4268-a1c0-0a45b815b07f.png" alt="Close-up detail shot showing material texture and craftsmanship" />
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bd2ca57e-319f-4dd7-8876-546ca6df86d3.png" alt="Alternate angle showing design features from different perspective" />
+            </div>
+            <div class="details-info">
+                <h2 class="details-title" id="detail-title">Product Name</h2>
+                <p class="details-price" id="detail-price">$0</p>
+                <p class="details-description" id="detail-description">
+                    This premium furniture piece is crafted from sustainable materials with meticulous attention to detail. The design combines form and function to create a statement piece that elevates any living space. Built to last with quality materials and expert craftsmanship.
+                </p>
+                <div class="details-features">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Premium sustainable materials</li>
+                        <li>Handcrafted by expert artisans</li>
+                        <li>Timeless design that complements any decor</li>
+                        <li>Built for durability and daily use</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" id="detail-add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section (hidden by default) -->
+    <section id="cart" class="cart-section">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be added here dynamically -->
+                <p class="empty-cart-message">Your cart is empty</p>
+            </div>
+            <div class="cart-total">
+                Total: $<span id="cart-total">0</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Furnisoul</h3>
+                    <p>Bringing soul to modern living spaces through thoughtfully designed furniture crafted with exceptional quality.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" onclick="showSection('home')">Home</a></li>
+                        <li><a href="#" onclick="showSection('products')">Products</a></li>
+                        <li><a href="#" onclick="showSection('cart')">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>123 Design Avenue</li>
+                        <li>New York, NY 10001</li>
+                        <li>info@furnisoul.com</li>
+                        <li>(555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Furnisoul. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
