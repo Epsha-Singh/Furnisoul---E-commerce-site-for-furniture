@@ -243,8 +243,10 @@
           text-align: center;
           color: 595959;
           height: 56px;
-          width: 650px;
-          margin: 0 324px 0 324px;
+          max-width: 100%;
+          width: auto;
+          margin: 0 auto;
+          padding: 0 1rem;
         }
 
         .products-grid {
@@ -597,6 +599,41 @@
   .features h4,
   .features p {
     width: 100%;
+  }
+  .products-section {
+    padding: 2rem 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 0 1rem;
+  }
+
+  .products-grid {
+    gap: 1.5rem;
+  }
+
+  .product-info {
+    padding: 1rem;
+  }
+
+  .product-title {
+    font-size: 1rem;
+  }
+
+  .product-price {
+    font-size: 1rem;
+  }
+
+  .add-to-cart {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
   }
 }
 section {
